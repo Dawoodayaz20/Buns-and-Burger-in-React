@@ -6,16 +6,6 @@ import MenuPage from './pages/menupage/menu.component';
 import Footer from './components/footer/footer.component';
 import './App.css'
 
-const TempComponent = () => {
-  return (<>
-            <h1 className="text-4xl font-bold text-blue-600">Hello from TempComponent</h1>
-            <h1 className="text-5xl font-bold text-blue-600">Hello from TempComponent</h1>
-            <h1 className="text-4xl font-bold text-blue-600">Hello from TempComponent</h1>
-          </>
-    
-  )
-}
-
 
 class App extends React.Component {
   constructor(){
@@ -33,7 +23,6 @@ class App extends React.Component {
         <Routes>
           <Route path='/' element={ <HomePage /> } />
           <Route path='/menu' element={ <MenuPage /> } />
-          <Route path='/temp' element={ <TempComponent /> } />
         </Routes>
         <Footer />
         </div>
