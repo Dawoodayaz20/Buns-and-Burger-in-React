@@ -13,9 +13,9 @@ const Header = () => {
       />
       <h1 className="text-2xl font-bold">Buns and Burgers</h1>
       <div className="relative transition duration-1000">
-        <a href="Cart.html">
+        <Link to="/cart">
           <i className="fa-solid fa-cart-shopping text-yellow-200 text-xl hover:scale-110 transition-transform"></i>
-        </a>
+        </Link >
       </div>
       <nav id="navbar" className="flex gap-4">
         <Link className="text-yellow-200 rounded-lg px-4 py-2 text-lg font-bold transition duration-200 hover:bg-yellow-200 hover:text-red-700 hover:font-extrabold" to="/">Home</Link>
