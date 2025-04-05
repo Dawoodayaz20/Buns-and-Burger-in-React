@@ -5,6 +5,7 @@ import Header from './components/header/header.component';
 import MenuPage from './pages/menupage/menupage.component';
 import Footer from './components/footer/footer.component';
 import CartPage from './pages/cartpage/cartpage.component';
+import ChatBotPage from './pages/chatpage/chatbotpage';
 import { CartProvider } from './components/cart/cartcontext';
 import './App.css'
 
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Route path='/' element={ <HomePage /> } />
           <Route path='/menu' element={ <MenuPage /> } />
           <Route path='/cart' element={ <CartPage /> } />
+          <Route path='/chat' element={ <ChatBotPage /> } />
         </Routes>
         <Footer />
         </div>
