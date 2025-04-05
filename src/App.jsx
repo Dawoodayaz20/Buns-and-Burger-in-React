@@ -6,6 +6,7 @@ import MenuPage from './pages/menupage/menupage.component';
 import Footer from './components/footer/footer.component';
 import CartPage from './pages/cartpage/cartpage.component';
 import ChatBotPage from './pages/chatpage/chatbotpage';
+import BurgerChatWidget from './pages/chatpage/chatWidget.component';
 import { CartProvider } from './components/cart/cartcontext';
 import './App.css'
 
@@ -21,6 +22,7 @@ class App extends React.Component {
   render() {
     return (
       <CartProvider>
+        <BurgerChatWidget />
         <Router>
       <div>
       <Header />
