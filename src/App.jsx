@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/homepage/homePage.component';
 import Header from './components/header/header.component';
 import MenuPage from './pages/menupage/menupage.component';
-import Footer from './components/footer/footer.component';
+import AboutPage from './pages/aboutpage/about.component';
 import CartPage from './pages/cartpage/cartpage.component';
+import Footer from './components/footer/footer.component';
 import ChatBotPage from './pages/chatpage/chatbotpage';
 import BurgerChatWidget from './pages/chatpage/chatWidget.component';
 import { CartProvider } from './components/cart/cartcontext';
@@ -31,6 +32,7 @@ class App extends React.Component {
           <Route path='/menu' element={ <MenuPage /> } />
           <Route path='/cart' element={ <CartPage /> } />
           <Route path='/chat' element={ <ChatBotPage /> } />
+          <Route path='/about' element={ <AboutPage /> } />
         </Routes>
         <Footer />
         </div>
