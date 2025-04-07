@@ -8,7 +8,6 @@ export async function askAgent(question) {
       body: JSON.stringify({ question }),
     });
   
-    const data = await response.json();
-    return data.response;
+    const data = await response.text();
+    return data;
   }
-  
