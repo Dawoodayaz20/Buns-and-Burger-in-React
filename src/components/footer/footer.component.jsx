@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     
-    const emailimage = new URL(`../../assets/Email-icon.png`, import.meta.url);
+    const emailimage = new URL(`../../assets/images/Email-icon.png`, import.meta.url);
     return (
         
         <footer id="aboutus" className="mt-10 bg-red-700 text-yellow-200 text-center py-6 justify-items-center">
