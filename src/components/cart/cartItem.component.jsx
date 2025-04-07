@@ -16,12 +16,12 @@ const CartItems = () => {
               <div key={item.id} className="border-b py-4 flex justify-between">
                 <div>
                   <h2 className="text-lg font-semibold">{item.name}</h2>
-                  <p className="text-red-700">{item.price}</p>
-                  {/* <img src={imagePath} /> */}
+                  <p className="text-red-700">Price: {item.price}</p>
+                  <p>Quantity: {item.quantity}</p>
                 </div>
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="bg-red-500 text-white px-3 py-1 rounded transition duration-200 hover:scale-105"
+                  className="bg-red-500 text-white px-3 h-14 py-1 rounded transition duration-200 hover:scale-105"
                 >
                   Remove
                 </button>
