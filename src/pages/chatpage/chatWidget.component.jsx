@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import ChatBot from '../../components/chatbot/chatbot.component';
 import { Link } from 'react-router-dom';
 
 const BurgerChatWidget = () => {
