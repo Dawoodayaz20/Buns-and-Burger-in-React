@@ -1,13 +1,9 @@
 import React from "react";
 
 const AboutPage = () => {
-
-    let imagePath = new URL(`../../../public/images/Buns&Burgers.webp`, import.meta.url)
-        // , );
-// 
     return(
         <section className="mt-[10rem] flex items-center">
-            <img src={imagePath} className="ml-4 w-[30rem] h-[20rem] rounded-md" alt="Buns and Burgers" />
+            <img src='/images/Buns&Burgers.webp' className="ml-4 w-[30rem] h-[20rem] rounded-md" alt="Buns and Burgers" />
             <div id="aboutUs" className="text-lg justify-center items-center text-center text-[#a71515] ml-[10rem] mr-[10rem]">
                 Welcome to Buns and Burgers: Where Every Bite is a Delight! 
                 <br />

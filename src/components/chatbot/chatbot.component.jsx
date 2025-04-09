@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { askAgent } from './api'; // <-- your API function
+import ReactMarkdown from 'react-markdown';
 
 const ChatBot = () => {
   const [question, setQuestion] = useState('');
@@ -36,7 +37,7 @@ const ChatBot = () => {
                 : 'mr-auto bg-yellow-100'
             }`}
           >
-            {msg.text}
+            <ReactMarkdown>{msg.text}</ReactMarkdown>
           </div>
         ))}
       </div>

@@ -23,10 +23,10 @@ class App extends React.Component {
   render() {
     return (
       <CartProvider>
-        <BurgerChatWidget />
         <Router>
       <div>
       <Header />
+      <BurgerChatWidget />
         <Routes>
           <Route path='/' element={ <HomePage /> } />
           <Route path='/menu' element={ <MenuPage /> } />

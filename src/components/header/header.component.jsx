@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../../public/images/logo.png'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -9,7 +8,7 @@ const Header = () => {
         id="logopic" 
         className="h-16 w-16 rounded-full" 
         alt="Buns and Burger Logo" 
-        src={logo} 
+        src='/images/logo.png'
       />
       <h1 className="text-2xl font-bold">Buns and Burgers</h1>
       <div className="relative transition duration-1000">
