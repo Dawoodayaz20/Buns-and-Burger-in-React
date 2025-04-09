@@ -2,8 +2,9 @@ import React from "react";
 
 const AboutPage = () => {
 
-    let imagePath = new URL(`../../assets/images/Buns&Burgers.webp`, import.meta.url);
-
+    let imagePath = new URL(`../../../public/images/Buns&Burgers.webp`, import.meta.url)
+        // , );
+// 
     return(
         <section className="mt-[10rem] flex items-center">
             <img src={imagePath} className="ml-4 w-[30rem] h-[20rem] rounded-md" alt="Buns and Burgers" />

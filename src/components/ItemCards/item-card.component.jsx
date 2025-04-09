@@ -8,7 +8,7 @@ const ItemCard = ({ name, price, ImgLink }) => {
   
   let imagePath;
   try {
-    imagePath = new URL(`../../assets/images/${ImgLink}`, import.meta.url);
+    imagePath = new URL(`../../../public/images/${ImgLink}`, import.meta.url);
   } catch (error) {
     console.error(`Image not found: ${ImgLink}`, error);
   }
