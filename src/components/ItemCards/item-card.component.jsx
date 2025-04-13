@@ -23,6 +23,7 @@ const ItemCard = ({ name, price, ImgLink }) => {
       />
       <ItemButton 
       buttonname="Buy Now"
+      onClick={() => alert(`Your ${item.name} has been ordered`)}
       />
       </div>
     </div>
