@@ -1,6 +1,6 @@
 // api.js or inside your component
 export async function askAgent(question) {
-    const response = await fetch('http://127.0.0.1:8000/ask', {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
