@@ -14,7 +14,7 @@ class DealsPage extends React.Component {
 
     render() {
         return(
-        <div className='mt-52 md:mt-40'>
+        <div className='mt-56 md:mt-40'>
             <h1 className="text-red-700 font-bold text-4xl text-center">Burgers</h1>
             <div className="inline-flex flex-wrap justify-items-center justify-between">
                 {this.state.dealsdata.Burgers.slice(0, 4).map(({id, ...otherMenuProps}) => (
