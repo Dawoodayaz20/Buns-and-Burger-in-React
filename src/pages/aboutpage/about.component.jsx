@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutPage = () => {
     return(
-        <section className="mt-[10rem] flex items-center">
-            <img src='/images/Buns&Burgers.webp' className="ml-4 w-[30rem] h-[20rem] rounded-md" alt="Buns and Burgers" />
-            <div id="aboutUs" className="text-lg justify-center items-center text-center text-[#a71515] ml-[10rem] mr-[10rem]">
+        <section className="my-52 md:my-40 flex items-center">
+            <img src='/images/Buns&Burgers.webp' className="ml-4 w-60 h-48 md:w-screen md:h-56 rounded-md" alt="Buns and Burgers" />
+            <div id="aboutUs" className="text-lg justify-center items-center text-center text-[#a71515] ml-8 mr-8">
                 Welcome to Buns and Burgers: Where Every Bite is a Delight! 
                 <br />
                 At Buns and Burgers, we believe that a great burger starts with the freshest ingredients and a passion for perfection. 

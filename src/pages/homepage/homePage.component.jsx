@@ -3,7 +3,7 @@ import HomeItems from '../../components/homeItems/home-items.component';
 
 const HomePage = () => {
     return (
-    <div className='mt-40'>
+    <div className='mt-52 md:mt-40'>
     <HomeItems />
     </div>
     )
