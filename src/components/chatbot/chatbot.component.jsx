@@ -22,7 +22,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="max-w-md my-36 mx-auto p-4 bg-yellow-50 rounded-2xl shadow-xl border border-yellow-300">
+    <div className="max-w-md my-56 md:my-40 mx-auto p-4 bg-yellow-50 rounded-2xl shadow-xl border border-yellow-300">
       <h2 className="text-2xl font-bold text-center text-yellow-800 mb-4">
         🍔 Buns & Burger Assistant
       </h2>
