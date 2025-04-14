@@ -17,7 +17,7 @@ const ItemCard = ({ name, price, ImgLink }) => {
         <h2 className="text-xl font-bold text-red-700 mb-2">{name}</h2>
         <div className="text-lg text-red-700">{price}</div>
       </div>
-      <div className="inline-flex">
+      <div className="inline-flex space-x-3">
       <ItemButton 
       buttonname="Add to Cart" onClick={() => addToCart(item)}
       />

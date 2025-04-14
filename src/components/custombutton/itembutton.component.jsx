@@ -10,6 +10,4 @@ const ItemButton = ({buttonname, onClick}) => {
     )
 }
 
-// padding: 10px bg-red-700 text-yellow-300 hover:
-
 export default ItemButton;
