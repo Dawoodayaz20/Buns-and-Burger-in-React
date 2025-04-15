@@ -9,7 +9,8 @@ const BurgerChatWidget = () => {
         className="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full p-4 shadow-lg"
         to='/chat'
       >
-        💬 Chat with Us
+        <span> 💬 </span>
+        <span className='hidden lg:inline'> Chat with Us</span>
       </Link>
     </div>
   );

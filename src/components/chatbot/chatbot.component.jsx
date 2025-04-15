@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 const ChatBot = () => {
   const [question, setQuestion] = useState('');
   const [chatLog, setChatLog] = useState([
-    { sender: 'bot', text: 'Hey! Ask me anything about our burgers or deals 🍔' },
+    { sender: 'bot', text: 'Hey! Ask me anything about our burgers, pizzas or deals 🍔 🍕.' },
   ]);
 
   const handleSubmit = async () => {
@@ -22,7 +22,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="max-w-md my-56 md:my-40 mx-auto p-4 bg-yellow-50 rounded-2xl shadow-xl border border-yellow-300">
+    <div className="w-max my-60 md:my-40 mx-auto p-4 bg-yellow-50 rounded-2xl shadow-xl border border-yellow-300">
       <h2 className="text-2xl font-bold text-center text-yellow-800 mb-4">
         🍔 Buns & Burger Assistant
       </h2>
@@ -47,6 +47,9 @@ const ChatBot = () => {
           type="text"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
+          onKeyDown={(ent) => {if(ent.key === 'Enter', e.target.value);
+            setQuestion(e.target.value)
+          }}
           placeholder="E.g. Any family deals?"
           className="flex-1 px-4 py-2 rounded-l-lg border border-yellow-400 focus:outline-none"
         />
