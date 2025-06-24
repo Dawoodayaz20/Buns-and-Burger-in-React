@@ -1,5 +1,6 @@
-// api.js or inside your component
+
 export async function askAgent(question) {
+  try{
     const response = await fetch(`${import.meta.env.VITE_API_URL}/ask`, {
       method: 'POST',
       headers: {
@@ -7,7 +8,10 @@ export async function askAgent(question) {
       },
       body: JSON.stringify({ question }),
     });
-  
     const data = await response.json();
     return data;
   }
+  catch(error){
+    return error;
+  }
+}
