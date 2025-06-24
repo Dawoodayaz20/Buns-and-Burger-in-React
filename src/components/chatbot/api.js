@@ -8,10 +8,14 @@ export async function askAgent(question) {
       },
       body: JSON.stringify({ question }),
     });
+    if (!response.ok) {
+      throw new Error(`Server error: ${response.status}`);
+    }
+
     const data = await response.json();
     return data;
-  }
-  catch(error){
-    return error;
+  } catch (error) {
+    console.error("Error calling agent:", error);
+    return { error: "Something went wrong. Please try again later." };
   }
 }
