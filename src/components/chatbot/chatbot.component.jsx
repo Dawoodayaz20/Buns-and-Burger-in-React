@@ -47,8 +47,10 @@ const ChatBot = () => {
           type="text"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          onKeyDown={(ent) => {if(ent.key === 'Enter', e.target.value);
-            setQuestion(e.target.value)
+          onKeyDown={(ent) => {
+            if (ent.key === 'Enter') {
+              handleSubmit();
+            }
           }}
           placeholder="E.g. Any family deals?"
           className="flex-1 px-4 py-2 rounded-l-lg border border-yellow-400 focus:outline-none"
