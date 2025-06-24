@@ -15,7 +15,7 @@ export async function askAgent(question) {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error calling agent:", error);
+    alert("Error calling agent:", error);
     return { error: "Something went wrong. Please try again later." };
   }
 }
