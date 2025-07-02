@@ -1,7 +1,7 @@
 
 export async function askAgent(question) {
   try{
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/ask`, {
+    const response = await fetch(`${import.meta.env.Customer_Support_API_URL}/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
