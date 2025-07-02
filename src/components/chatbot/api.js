@@ -16,6 +16,7 @@ export async function askAgent(question) {
     return data;
   } catch (error) {
     alert("Error calling agent:", error.message);
+    console.log(error.message)
     return { error: "Something went wrong. Please try again later." };
   }
 }
