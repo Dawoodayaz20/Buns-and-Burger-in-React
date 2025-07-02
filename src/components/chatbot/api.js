@@ -1,7 +1,7 @@
 
 export async function askAgent(question) {
   try{
-    const response = await fetch(`${import.meta.env.VITE_CUSTOMER_SUPPORT_API_URL}/ask`, {
+    const response = await fetch(`https://vercel-fastapiproject.vercel.app/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
