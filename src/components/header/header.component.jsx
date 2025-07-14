@@ -21,6 +21,7 @@ const Header = () => {
         <Link className="text-yellow-200 rounded-lg px-4 py-2 text-base md:text-lg font-bold transition duration-200 hover:bg-yellow-200 hover:text-red-700 hover:font-extrabold" to="/menu">Menu</Link>
         <Link className="text-yellow-200 rounded-lg px-4 py-2 text-base md:text-lg font-bold transition duration-200 hover:bg-yellow-200 hover:text-red-700 hover:font-extrabold" to="/deals">Hot Deals</Link>
         <Link className="text-yellow-200 rounded-lg px-4 py-2 text-base md:text-lg font-bold transition duration-200 hover:bg-yellow-200 hover:text-red-700 hover:font-extrabold" to="/about">About Us</Link>
+        <Link className="text-yellow-200 rounded-lg px-4 py-2 text-base md:text-lg font-bold transition duration-200 hover:bg-yellow-200 hover:text-red-700 hover:font-extrabold" to="/auth"></Link>
       </nav>
     </header>
   );

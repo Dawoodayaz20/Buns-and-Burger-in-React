@@ -1,4 +1,5 @@
 import React from "react";
+import Login from "../../components/login/login.component";
 
 class LoginPage extends React.Component {
     constructor(){
@@ -10,12 +11,7 @@ class LoginPage extends React.Component {
 
     render(){
         return(
-            <div>
-                <input
-                type="email-address"
-                placeholder="Email"
-                />
-            </div>
+         <Login />   
         )
     }
 }
