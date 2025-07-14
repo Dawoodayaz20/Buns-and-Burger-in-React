@@ -1,7 +1,7 @@
 
 export async function askAgent(question) {
   try{
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/ask`, {
+    const response = await fetch(`https://vercel-fastapiproject.vercel.app/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -15,7 +15,8 @@ export async function askAgent(question) {
     const data = await response.json();
     return data;
   } catch (error) {
-    alert("Error calling agent:", error);
+    alert("Error calling agent:", error.message);
+    console.log(error.message)
     return { error: "Something went wrong. Please try again later." };
   }
 }
