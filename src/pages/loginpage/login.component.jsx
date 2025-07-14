@@ -4,15 +4,18 @@ class LoginPage extends React.Component {
     constructor(){
         super();
 
-        this.state = {
-            Name : '',
-            password : ''
-        }
     }
+
+
 
     render(){
         return(
-            <div></div>
+            <div>
+                <input
+                type="email-address"
+                placeholder="Email"
+                />
+            </div>
         )
     }
 }
